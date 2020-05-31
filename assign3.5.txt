@@ -1,0 +1,12 @@
+object EvenOrOdd extends App {
+  def iseven(x:Int):Boolean=x%2 match{
+    case 0=>true
+    case _=>false
+   
+  }
+   def addeven(n:Int):Unit={
+     if(iseven(n))println(n)
+     if(n>0) addeven(n-1)
+   }
+   println(addeven(10))
+}

@@ -1,0 +1,9 @@
+
+object EvenOrOdd extends App {
+  def iseven(x:Int):Boolean=x%2 match{
+    case 0=>true
+    case _=>false
+   
+  }
+   println(iseven(11))
+}
